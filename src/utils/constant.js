@@ -1,22 +1,17 @@
 export const tableColumns = [
     {
-        dataField: "userid",
+        dataField: "email",
         text: "Company/Organization",
         sort: true,
       },
       {
-        dataField: "email",
+        dataField: "userid",
         text: "Account Created",
         sort: true,
       },
       {
         dataField: "username",
         text: "Facilities",
-        sort: true,
-      },
-      {
-        dataField: "zonesCount",
-        text: "Zones",
         sort: true,
       },
       {
