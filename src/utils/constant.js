@@ -30,3 +30,36 @@ export const tableColumns = [
         sort: true,
       },
 ]
+
+export const facilitytableColumns = [
+  {
+      dataField: "swipetrackerid",
+      text: "Swipetracker Id",
+      sort: true,
+    },
+    {
+      dataField: "userid",
+      text: "User Id",
+      sort: true,
+    },
+    {
+      dataField: "feedid",
+      text: "Feed Id",
+      sort: true,
+    },
+    {
+      dataField: "rightswipedpmid",
+      text: "Right Swiped Pmid",
+      sort: true,
+    },
+    {
+      dataField: "leftswipedpmid",
+      text: "Left Swiped Pmid",
+      sort: true,
+    },
+    {
+      dataField: "markedasreadpmids",
+      text: "Marked Pmids",
+      sort: true,
+    },
+]

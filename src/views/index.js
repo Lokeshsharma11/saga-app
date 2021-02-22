@@ -2,6 +2,7 @@ import screen from "./screen";
 import { connect } from "react-redux";
 const {
     getTableData,
+    getFacilityTableData
 } = require(`../redux/action`);
 
 
@@ -10,11 +11,13 @@ const mapStateToProps = (state) => {
   console.log("IIIstate", state);
   return {
     tableData: state.TableReducer.tableData,
+    facilitytableData: state.FacilityTableReducer.facilitytableData
   };
 };
 const mapDispatchToProps = (dispatch) => {
   return {
     getTableData: () => dispatch(getTableData()),
+    getFacilityTableData: () => dispatch(getFacilityTableData())
   };
 };
 
