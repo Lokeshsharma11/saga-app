@@ -7,10 +7,10 @@ import {
 import { tableService } from "../services/tableservice";
 
 function* getTableData({ success = () => {} }) {
-  console.log("deleteId")
+  console.log("getTable")
   try {
     const response = yield tableService();
-    console.log("inside saga", response)
+    console.log("inside table saga", response)
     yield put(setTableData(response));
     success(response);
   } catch (error) {

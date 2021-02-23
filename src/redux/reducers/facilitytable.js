@@ -4,7 +4,7 @@ const initialCommonState = {
 };
 
 const FacilityTableReducer = (state = initialCommonState, action) => {
-  console.log("Action", action);
+  console.log("Action FacilityTableReducer", action);
   switch (action.type) {
     case SET_FACILITY_DATA:
       return {

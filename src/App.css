@@ -1,3 +1,9 @@
+.table-style {
+  float: right;
+  margin: 5px;
+}
+
+
 .App {
   text-align: center;
 }

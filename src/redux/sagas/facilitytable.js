@@ -6,10 +6,10 @@ import {
 import { facilitytableService } from "../services/facilitytable";
 
 function* getFacilityTableData({ success = () => {} }) {
-  console.log("deleteId")
+  console.log("FacilityTable")
   try {
     const response = yield facilitytableService();
-    console.log("inside saga", response)
+    console.log("inside saga response", response)
     yield put(setFacilityTableData(response));
     success(response);
   } catch (error) {
