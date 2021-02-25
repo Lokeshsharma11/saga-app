@@ -8,26 +8,31 @@ export const tableColumns = [
         dataField: "userid",
         text: "Account Created",
         sort: true,
+        align: 'center'
       },
       {
         dataField: "username",
         text: "Facilities",
         sort: true,
+        align: 'center'
       },
       {
         dataField: "specialties",
         text: "User in Account",
         sort: true,
+        align: 'center'
       },
       {
         dataField: "lastlogin",
         text: "Sensors",
         sort: true,
+        align: 'center'
       },
       {
         dataField: "blockedreason",
         text: "Admin",
         sort: true,
+        align: 'center'
       },
 ]
 

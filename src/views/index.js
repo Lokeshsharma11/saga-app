@@ -11,6 +11,7 @@ const mapStateToProps = (state) => {
   console.log("IIIstate", state);
   return {
     tableData: state.TableReducer.tableData,
+    loader: state.LoaderReducer.loader,
     facilitytableData: state.FacilityTableReducer.facilitytableData
   };
 };

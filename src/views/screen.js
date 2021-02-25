@@ -18,7 +18,7 @@ const Dashboard = ({
   return (
     <div>
       <h2>CUSTOMER</h2>
-      <div>
+      <div> 
         <Tablewrapper
           keyField="id"
           data={tableData}
