@@ -1,7 +1,6 @@
 import Dashboardd from './views/index';
 import { Router, Route, Switch } from "react-router-dom";
 import {createBrowserHistory} from "history"
-import Login from './views/Login/login';
 
 function App() {
   const hist = createBrowserHistory();
@@ -9,8 +8,7 @@ function App() {
     <div>
       <Router history={hist}>
       <Switch>
-        <Route path="/" component={Dashboardd}/>
-        <Route path="/card" component={Login}/>
+        <Route exect path="/" component={Dashboardd}/>
       </Switch>
       </Router>
     </div>
