@@ -3,11 +3,14 @@ import ToolkitProvider, { Search } from "react-bootstrap-table2-toolkit";
 import paginationFactory from "react-bootstrap-table2-paginator";
 import "../App.css";
 import { Loader } from "../loader";
-import { connect } from "react-redux";
+import { useSelector } from "react-redux"
+// import { connect } from "react-redux";
 
 const { SearchBar } = Search;
 
-const Tablewrapper = ({ data, columns, loader }) => {
+
+const Tablewrapper = ({ data, columns }) => {
+  const loader = useSelector(state => state.LoaderReducer.loader)
   return (
     <div>
       <ToolkitProvider keyField="id" data={data} columns={columns} search>
@@ -31,11 +34,13 @@ const Tablewrapper = ({ data, columns, loader }) => {
     </div>
   );
 };
-const mapStateToProps = (state) => {
-  console.log("IIVstate", state);
-  return {
-    loader: state.LoaderReducer.loader,
-  };
-};
+// const mapStateToProps = (state) => {
+//   console.log("IIVstate", state);
+//   return {
+//     loader: state.LoaderReducer.loader,
+//   };
+// };
 
-export default connect(mapStateToProps)(Tablewrapper);
+// export default connect(mapStateToProps)(Tablewrapper);
+export default Tablewrapper
+
